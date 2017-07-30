@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: starwars_app_development
+
+test:
+  <<: *default
+  database: starwars_app_test
+
+production:
+  <<: *default
+  database: starwars_app_production
