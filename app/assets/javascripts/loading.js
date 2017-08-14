@@ -2,7 +2,7 @@
 // Wait for window load
 $(window).load(function() {
 	// Animate loader off screen
-	$(".se-pre-con").fadeOut(1600, "linear", function(){
+	$(".se-pre-con").fadeOut(3500, "linear", function(){
     $(this).fadeOut("slow");
   });
 });
