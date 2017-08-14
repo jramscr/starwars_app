@@ -6,9 +6,29 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Films', films_path %></li>
+          <li><%= link_to 'People', people_path %></li>
+          <li><%= link_to 'Planets', planets_path %></li>
+          <li><%= link_to 'Species', species_path %></li>
+          <li><%= link_to 'Starships', starships_path %></li>
+          <li><%= link_to 'Vehicles', vehicles_path %></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="se-pre-con"></div>
+      <%= yield %>
+    </div>
+    <footer class="navbar navbar-fixed-bottom">
+      <div class="container">
+      </div>
+    </footer>
   </body>
 </html>
